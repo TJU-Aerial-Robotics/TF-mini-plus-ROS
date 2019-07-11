@@ -1,0 +1,9 @@
+<launch>
+  <node pkg="tfmini-plus-ros" type="tfmini_plus_node" name="tfmini_plus_node" output="screen" respawn="true">
+    <param name="port" type="string" value="/dev/ttyUSB0" />
+    <param name="baudrate" type="int" value="115200" />
+    <param name="pollrate" type="int" value="50" />
+    <param name="cutoff_freq" type="int" value="10" />
+    <param name="topic_name" type="string" value="/lidar_ns/lidar_data" />
+  </node>
+</launch>
